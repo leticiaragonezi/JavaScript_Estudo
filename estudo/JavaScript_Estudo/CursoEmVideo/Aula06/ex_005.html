@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TesteJS_Strings</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            font: normal 1.7rem arial;
+            color: darkgoldenrod;      
+        }
+        p.destaque{
+            font: italic 2rem arial;
+            color: bisque;
+        }
+        ol{
+            list-style: none;
+            padding: 5px;
+        }
+
+        ol li{
+            padding: 3px;
+        }
+
+        small.obs{
+            font: italic arial;
+            color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello, world!!</h1>
+    <p>A maldição já era!!</p>
+
+    <section>
+        <p class="destaque"> Também posso declarar que uma variavel númerica se transforme em uma escrita ou seja <i>number para string </i>:<br>
+            <p>
+                <b>
+                    String(var) <br><br>
+                    ou <br><br>
+                    var.<i>toString()</i>
+                </b>
+            </p>
+        </p>
+
+    </section>
+
+    <section>
+        <p class="destaque">Formatando strings e as organizando</p>
+        <ol>
+            <li><b>.length</b> <small class="obs">conta quantas letras tem a string</small></li>
+            <li><b>.toUpperCase()</b> <small class="obs">coloca todas as letras em MAIÚSCULAS</small> ps: note que se mantém os ()</li>
+            <li><b>.toLowerCase()</b> <small class="obs">coloca todas as letras em minúsculas </small> ps: note que se mantém os ()</li>
+        </ol>
+    </section>
+
+    <script>
+        
+        var n1 = Number.parseInt(window.prompt("Digite o primeiro número: "))
+        var n2 = Number.parseInt(window.prompt('Digite o segundo número: '))
+        var s= n1+n2
+        window.alert(`A soma de ${n1} e ${n2} é  igual a ${s}`)
+    </script>
+</body>
+</html>

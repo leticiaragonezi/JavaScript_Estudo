@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TesteJS_Calculo</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            font: normal 1.7rem arial;
+            color: darkgoldenrod;
+        }
+
+        p.destaque {
+            font: italic 2rem arial;
+            color: bisque;
+        }
+
+        p.destaqueMenor {
+            font: italic 1.7rem arial;
+            color: rgb(240, 136, 10);
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        ol li {
+            padding: 5px;
+        }
+
+        strong.BigCode{
+            font: bold 1.3rem arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello, world!!</h1>
+    <p>A maldição já era!!</p>
+
+    <section>
+        <p class="destaque">para declarar que o <b>+</b> não é uma concatenação mas sim um operador lógico devemos:</p>
+
+        <p class="destaque"> tenho que declarar que as variaveis devem ser númericas ex:<br>
+            (number+number) é uma adição <br>
+            (string+string) é uma concatenação
+            <br><br>
+            Para transformar um texto em numero se utiliza do termo:
+        </p>
+
+        <!--Explicação do comando de transformação de texto para número -->
+        <ol>
+            <li><strong>Number.<i>parse</i>(Int ou Float)</strong></li>
+            <li><strong>Então fica:</strong></li>
+            <!--Número inteiro-->
+            <li><strong>Number.parseInt(variavel ou comando)</strong><br>ou</li>
+            <!--Número decimal, ou chamdo com ponto flutuante, ou float-->
+            <li><strong>Number.parseFloat(variavel ou comando).</strong></li>
+            <!--Próprio coódigo já define se é Float ou Int-->
+            <li><strong>Se quiser economizar código so declarar:<br>
+                    Number(variavel ou comando)<br>
+                    <i><small> isto está em ECMAScript</small></i></strong>></li>
+        </ol>
+        <p class="destaque"> então agora posso converter texto em número.</p>
+
+        <p class="destaque">
+            Há também metodologias de formatação de Numeros, que seguem agora:
+        </p>
+        <ol>
+            <li>var.<strong>toFixed(n° de casas decimais)</strong></li>
+            <li>var.toFixed(2).<strong>replace('.' , ',')</strong>
+                <br><i><small>vale ressaltar que replace é trocar uma coisa por outra ou seja 'primeira coisa' por
+                        'trocado';</small></i><br>
+            </li>
+            <li>
+                <p class="destaque">comando de formataçãode sálarios e valores precificados:</p>
+                <p class="destaqueMenor">var.<strong>toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</strong></p><br>
+                em outras palavras: <br><br>
+                <strong class="BigCode">var.toLocaleString('lingua-paisDeLocalização', {obejeto: no caso style:'valor
+                    monetário', currency:'moeda'})</strong>
+            </li>
+            <li><strong></strong></li>
+        </ol>
+
+    </section>
+
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite o primeiro número: "))
+        var n2 = Number.parseInt(window.prompt('Digite o segundo número: '))
+        var s = n1 + n2
+        window.alert(`A soma de ${n1} e ${n2} é ` + s)
+    </script>
+
+</body>
+
+</html>

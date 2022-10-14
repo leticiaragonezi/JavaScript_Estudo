@@ -1,0 +1,24 @@
+
+
++ (adicionar) obs:lembre-se que ele só soma quando são duas 
+váriaveis de operação numérica, se não ele funciona como elemento de 
+concatenação
+
+- (subtrair)
+
+* (multiplicar)
+
+/ (dividir)
+
+
+% (restante ou módulo) obs: o funcionamento do módulo é o seguinte, ele vê 
+quanto um número cabe em um outro (qual o valor mais próximo que uma divisão do
+primeiro numero pelo segundo possa resultar, e mostra o resto).
+
+em outras palavras:
+retorna o número que resta depois que o 
+número da direita se divide pelo número da esquerda quantas vezes for possível.
+ex:
+
+console.log(11%3) = 11/3 = (3*3)+2 = saída do dado: 2
+console.log(21%4) = 21/4 = (5*4)+1 = saida do dado: 1 

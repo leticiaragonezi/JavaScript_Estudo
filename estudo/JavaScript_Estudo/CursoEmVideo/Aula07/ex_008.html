@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+    <link rel="stylesheet" href="design02.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ol class="menu">
+            <li><a href="index_Aula07.html" class="btnH">Home</a></li>
+            <li><a href="ex_008.html" class="btnH">Primeira Aula de Operadores</a></li>
+            <li><a href="Aula08_ex009.html" class="btnH">Segunda Aula de Operadores</a></li>
+            <li><a href="ex_010.html" class="btnH">Exercício</a></li>
+        </ol>
+    </header>
+
+    <center>
+        <section>
+            <!--contéudo da primeira aula-->
+            <p class="destaque">
+                <strong>Operadores no JS:</strong>
+            </p>
+
+            <ol>
+                <li>Aritméticos</li>
+                <li>Atribuição </li>
+            </ol>
+
+        </section>
+    </center>
+
+    <section id="Aritmetic">
+        <center>
+            <p class="destaque">
+                Operadores Aritméticos: <br>
+            </p>
+        </center>
+
+        <div class="column1">
+            <ol>
+                <li style="color: bisque;"><strong> Os operadores:</strong></li>
+                <li>+ (soma)</li>
+                <li>- (subtrai)</li>
+                <li>* (multiplica)</li>
+                <li>/ (divide)</li>
+                <li>% <small>(mostra resto de uma divisão inteira)</small></li>
+                <li>** (potencia)</li>
+            </ol>
+
+            <ol>
+                <li style="color: bisque;"><strong>Ordem Precedência:</strong></li>
+                <li>()</li>
+                <li>**</li>
+                <li>* , / , % </li>
+                <li>+ , - </li>
+                <ol>
+                    <li class="subTiObs">OBS: (todos que aqui estão segue a ordem da esquerda para direitaindependente
+                        de
+                        qual venha antes tanto os operadores de divisão/multiplicação quanto soma/subtração).</li>
+                </ol>
+            </ol>
+        </div>
+
+    </section>
+
+    <section id="Atribuition">
+        <center>
+            <p class="destaque">
+                Operadores de Atribuíção:
+            </p>
+        </center>
+
+        <div class="column1">
+            <ol>
+                <li style="color: bisque;"><strong> O operador simples:</strong></li>
+                <li> = (igual no JavaScript é traduzido para recebe), por exemplo:</li><br>
+                <li>var x = 5+4**3 (traduzindo a variavel <strong>x</strong> recebe o valor de 69)</li>
+                <li>ou, var x = (5+4)**3 (traduzindo a variavel <strong>x</strong> recebe o valor de 729) </li><br>
+                <li style="color: bisque;"><strong> Operador de Auto-atribuição:</strong></li>
+                <li>
+                    <p class="destaque">
+                        Podemos fazer dois tipos de auto atribuição, vale ressaltal os tipos delas:<br>
+                    <ol>
+                        <li>A por extenso:</li><br>
+                        <li>var n = 3 <br> n=n+4 (ou seja agora o valor de n agora é 7)</li><br>
+                        <li>E podemos também chegar no mesmo resultado de forma resumida: <br>
+                            <br>var n =3
+                            <br>n+=4 (n também será 7)
+                        </li>
+                    </ol>
+                    </p>
+                </li>
+            </ol>
+
+            <ol>
+                <li style="color: bisque;"><strong>Atribuição de Incremento (operdor de incremento):</strong></li>
+                <li>
+                    <p class="destaque">
+                        Existem dois tipos de operadores de atribuição por incremento:
+                    </p><br />
+                    <ol>
+                        <li><strong style="color:bisque;">Fazer por metodologia de Auto-atribuição. Exemplo:</strong>
+                            <br>
+                            var y = 5 <br>
+                            y+=1 (y fica com o valor de 6)<small> adicionou 1 </small><br>
+                            y-=1 (y fica igual a 5 novamente)<small>subtraiu 1</small>
+                        </li><br><br>
+
+                        <li><strong style="color:bisque;">Ou podemos demonstrar ambos os calculos com um operador de
+                                pós-incremento. Exemplo:</strong> <br>
+                            var y = 5 <br>
+                            y++ (y fica igual a 6 ) <small> adicionou 1 </small><br>
+                            y-- (y fica igual a 5 novamente) <small>subtraiu 1</small>
+                        </li>
+                    </ol>
+                </li>
+
+            </ol>
+        </div>
+    </section>
+</body>
+
+</html>

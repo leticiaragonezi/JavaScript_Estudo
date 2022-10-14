@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO_exemplo006</title>
+    <link rel="stylesheet" href="design01.css">
+</head>
+<body>
+    <script>
+        var name = window.prompt(`Digite o nome do aluno`)
+        var nota1 = Number(window.prompt(`Digite a primeira nota`))
+        var nota2 = Number(window.prompt(`Digite a segunda nota`))
+        var nota3 = Number(window.prompt(`Digite a terceira nota`))
+        var s= nota1+nota2+nota3
+        var media = s/3
+
+        window.alert(`Olá ${name}, bem vindo ao sistema, identificamos que seu nome tem ${name.length} letras`)
+        window.alert(`Também identificamos que ele escrito em maiusculas é ${name.toUpperCase()}, e ele escrito em minusculas é ${name.toLowerCase()}`)
+        window.alert(`Gostariamos que soubesse que a somas das notas ${nota1}, ${nota2} e ${nota3} é ` + s)
+
+        document.write(`Olá ${name}, após o processamneto de seus dados temos as respectivas respostas: <br>`)
+        document.write(`A soma de suas notas foram calculadas da seguinte maneira: ${nota1}+${nota2}+${nota3}=${s}. <br> `)
+        document.write(`E sua média foi calculada da seguinte forma ${String(s)}/3 = ${media} `)
+    </script>
+</body>
+</html>

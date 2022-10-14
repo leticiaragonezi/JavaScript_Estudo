@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício2</title>
+    <link rel="stylesheet" href="design01.css">
+    <style>
+        a.btn {
+            padding: 17px;
+            margin: 85px;
+            text-decoration: none;
+            background-color: rgb(131, 12, 161);
+            font: bold 2rem arial;
+            color: bisque;
+            border: solid 5px rgb(219, 7, 124);
+            border-radius: 25px;
+        }
+
+        a:hover {
+            background-color: rgb(72, 7, 88);
+            border: solid 5px rgb(255, 0, 140);
+            color: rgb(255, 209, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <section>
+        <center><a href="ex_007.html" class="btn">VOLTAR</a></center><br>
+    </section>
+    <center>
+        <script>
+            var user = window.prompt(`Digite seu nome:`)
+            var name = window.prompt("Digite o nome do Vendedor, " + user + "!");
+            var Sal = Number(window.prompt('digite o salário fixo do ' + name + ":"));
+            var Com = Number(window.prompt(`digite a comição do ${name.toUpperCase()}`));
+            var tot = ((Sal / 100) * Com) + Sal;
+            window.alert(`Olá ${user}, identificamos que o nome de ${name.toLowerCase()} tem ${name.length} letras`);
+
+            document.write(`${user} o calculo realizado pelo programa foi ${Sal.toFixed(2).replace('.', ',')} + ${Com.toFixed(2)}% = ${tot}. <br/>`)
+            document.write(`Portanto o slário total de <strong>${name.toUpperCase()}</strong> é de ` + tot.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
+            document.write(`Olá Seu nome é ${name.length} `)
+        </script>
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font: normal 1.7rem arial;
+    color: darkorange;
+    background-color: blueviolet;
+}
+
+ol {
+    list-style: none;
+    font: normal 1.5rem arial;
+    align-items: center;
+}
+
+ol li {
+    margin: 5px;
+}
+
+ol li.subT {
+    color: bisque;
+}
+
+ol li.subTiObs {
+    color: bisque;
+    font: normal 1rem arial;
+}
+
+a {
+    text-decoration: none;
+    font: normal 1.3rem arial;
+    color: aliceblue;
+}
+
+p.destaque {
+    font: bold 1.5rem arial;
+    color: bisque;
+    margin: 5pt;
+    padding: 2pt;
+}
+
+p.Detalhe {
+    font: normal 1.3rem arial;
+    color: bisque;
+}
+
+div.column1 {
+    margin-left: 10%;
+    justify-content: space-between;
+}
