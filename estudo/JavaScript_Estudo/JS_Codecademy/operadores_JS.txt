@@ -22,3 +22,5 @@ ex:
 
 console.log(11%3) = 11/3 = (3*3)+2 = saída do dado: 2
 console.log(21%4) = 21/4 = (5*4)+1 = saida do dado: 1 
+
+
