@@ -13,7 +13,8 @@ ol {
 }
 
 ol li {
-    margin: 5px;
+    margin: 6px;
+
 }
 
 ol li.subT {
@@ -23,6 +24,7 @@ ol li.subT {
 ol li.subTiObs {
     color: bisque;
     font: normal 1rem arial;
+    margin-top: 0px;
 }
 
 a {
@@ -76,4 +78,17 @@ p.Detalhe {
 div.column1 {
     margin-left: 10%;
     justify-content: space-between;
+}
+
+a.btnEx{
+    background-color: rgba(68, 6, 126, 0.61);
+    padding: 15px;
+    font: bolder 1.7rem arial;
+    border: 3px;
+    border-radius: 25px;
+}
+
+a.btnEx:hover{
+    color: darkorange;
+    background-color:  rgb(56, 4, 105);
 }

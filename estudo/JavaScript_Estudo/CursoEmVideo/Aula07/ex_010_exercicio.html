@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="treinamento de habilidades em html,css, e resumo de aula JavaScript">
+    <meta name="Author" content="Luca Frioli + allCommunity">
+    <title>Eleições</title>
+    <link rel="stylesheet" href="design02.css">
+</head>
+
+<body>
+    <header class="HeaderMenu">
+        <ol class="menu">
+            <li><a href="">Aula Anterior</a></li>
+            <li><a href="ex_010.html">voltar</a></li>
+            <li><a href="">Próxima Aula</a></li>
+        </ol>
+    </header>
+
+    <script>
+        //entrada de dados dos candidatos 
+        var Cand1 = window.prompt(`Digite o nome do 1° Candidato:`)
+        var NumDeVot1 = window.Number(prompt(`Digite quantos votos o candidato ${Cand1} teve`))
+        var Cand2 = window.prompt(`Digite o nome do 2° Candidato:`)
+        var NumDeVot2 = window.Number(prompt(`Digite quantos votos o candidato ${Cand2} teve`))
+        var Cand3 = window.prompt(`Digite o nome do 3° Candidato:`)
+        var NumDeVot3 = window.Number(prompt(`Digite quantos votos o candidato ${Cand3} teve`))
+
+        //saída de dados fazendo a síntese da entrada
+        document.writeln(`O candidato ${Cand1} teve ${NumDeVot1} votos ... <br><br>`)
+        document.writeln(`O candidato ${Cand2} teve ${NumDeVot2} votos ... <br><br>`)
+        document.writeln(`O candidato ${Cand3} teve ${NumDeVot3} votos ... <br><br>`)
+
+        //saída das operações lógicas dizendo quem foi vencedor
+        if ((NumDeVot1 > NumDeVot2) && (NumDeVot1 > NumDeVot3)) {
+            var percent = NumDeVot1 * 100 / (NumDeVot1 + NumDeVot2 + NumDeVot3)
+            document.writeln(`O candidato ${Cand1.toUpperCase()} foi o vencedor com <strong>${NumDeVot1}</strong> votos representando ${percent.toFixed(2).replace(`.`, `,`)}% do total de votos contados na eleição.`)
+        } else {
+            if ((NumDeVot2 > NumDeVot1) && (NumDeVot2 > NumDeVot3)) {
+                var percent = NumDeVot2 * 100 / (NumDeVot1 + NumDeVot2 + NumDeVot3)
+                document.writeln(`O candidato ${Cand2.toUpperCase()} foi o vencedor com <strong>${NumDeVot2}</strong> votos representando ${percent.toFixed(2).replace(`.`, `,`)}% do total de votos contados na eleição.`)
+            } else {
+                var percent = NumDeVot3 * 100 / (NumDeVot1 + NumDeVot2 + NumDeVot3)
+                document.writeln(`O candidato ${Cand3.toUpperCase()} foi o vencedor com <strong>${NumDeVot3}</strong> votos representando ${percent.toFixed(2).replace(`.`, `,`)}% do total de votos contados na eleição.`)
+            }
+        }
+
+        //aprender a usar bluePrints, quando aprender POO Refazer de maneira mais organizada e com entradass mais coerentes dentro de canvas e outros tipos de suceçôes lógicas e interfaces; OBS: Add um dataBase 
+    </script>
+</body>
+
+</html>
