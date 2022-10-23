@@ -43,8 +43,12 @@
                 var percent = NumDeVot2 * 100 / (NumDeVot1 + NumDeVot2 + NumDeVot3)
                 document.writeln(`O candidato ${Cand2.toUpperCase()} foi o vencedor com <strong>${NumDeVot2}</strong> votos representando ${percent.toFixed(2).replace(`.`, `,`)}% do total de votos contados na eleição.`)
             } else {
-                var percent = NumDeVot3 * 100 / (NumDeVot1 + NumDeVot2 + NumDeVot3)
-                document.writeln(`O candidato ${Cand3.toUpperCase()} foi o vencedor com <strong>${NumDeVot3}</strong> votos representando ${percent.toFixed(2).replace(`.`, `,`)}% do total de votos contados na eleição.`)
+                if ((NumDeVot3 > NumDeVot1) && (NumDeVot3 > NumDeVot2)) {
+                    var percent = NumDeVot3 * 100 / (NumDeVot1 + NumDeVot2 + NumDeVot3)
+                    document.writeln(`O candidato ${Cand3.toUpperCase()} foi o vencedor com <strong>${NumDeVot3}</strong> votos representando ${percent.toFixed(2).replace(`.`, `,`)}% do total de votos contados na eleição.`)
+                } else{
+                    document.writeln(`Tanto ${Cand1}, quanto ${Cand2} e o ${Cand3} empatarm com um n° de votos igual a ${NumDeVot1}.`)
+                }
             }
         }
 

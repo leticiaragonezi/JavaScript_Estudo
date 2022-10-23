@@ -3,7 +3,7 @@ body {
     padding: 0px;
     font: normal 1.7rem arial;
     color: darkorange;
-    background-color: blueviolet;
+    background-color: rgb(54, 37, 70);
 }
 
 ol {
@@ -25,6 +25,11 @@ ol li.subTiObs {
     color: bisque;
     font: normal 1rem arial;
     margin-top: 0px;
+}
+
+ol li.DimFont{
+    color: darkorange;
+    font: normal 1.2rem arial;
 }
 
 a {
@@ -91,4 +96,30 @@ a.btnEx{
 a.btnEx:hover{
     color: darkorange;
     background-color:  rgb(56, 4, 105);
+}
+
+button.bnt{
+    margin: 25px;
+    border: 3px solid rgb(177, 135, 0);
+    padding: 12px;
+    border-radius: 15px;
+    background-color: rgb(90, 81, 81);
+    font: bold 1.4rem arial;
+    color: rgb(216, 216, 216);
+}
+
+button.bnt:hover{
+    color: darkorange;
+    background-color:  rgb(56, 4, 105);
+    border-color: darkorange;
+}
+
+strong.plus{
+    background-color: darkorange;
+    margin: 3px;
+    padding: 10px;
+    border: 2px solid bisque;
+    border-radius: 30%;
+    font: bolder 1.4rem arial;
+    color: bisque;
 }

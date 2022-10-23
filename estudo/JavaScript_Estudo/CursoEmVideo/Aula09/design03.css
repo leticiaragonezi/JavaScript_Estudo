@@ -1,0 +1,75 @@
+* {
+ padding: 0px;
+ margin: 0px;
+}
+
+body{
+    font: normal 1.5rem arial;
+    color: darkorange;
+    background-color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    font: normal 1.5rem arial;
+    color: white;
+}
+
+ol{
+    list-style: none;
+}
+
+header.HeaderMenu{
+    background-color: blueviolet;
+    border: 3px solid rgb(102, 28, 172);
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+ol.menu{
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    margin: 15px;
+    list-style: none;
+    font: normal 1.5rem arial;
+    align-items: center;
+}
+
+ol.menu li{
+    padding: 0px;
+    border-radius: 15px;    
+}
+
+ol.menu li a{
+    background-color: rgb(102, 28, 172);
+    padding: 7px;
+    border-radius: 7px;
+}
+
+ol.menu li a:hover{
+    background-color: rgb(33, 13, 88);
+    border: rgba(255, 115, 0, 0.966);
+}
+
+ol li.TitleList{
+    font: bolder 1.4rem  arial;
+    color: bisque;
+
+}
+section.intro{
+    margin: 5px;
+    border:5px;
+    justify-content: center;
+}
+div.CenterContent{
+    justify-content: center;
+    margin:13px;
+    border: 12px;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+
