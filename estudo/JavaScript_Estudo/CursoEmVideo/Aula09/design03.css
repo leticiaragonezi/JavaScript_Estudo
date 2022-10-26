@@ -1,25 +1,25 @@
 * {
- padding: 0px;
- margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
-body{
+body {
     font: normal 1.5rem arial;
     color: darkorange;
     background-color: blueviolet;
 }
 
-a{
+a {
     text-decoration: none;
     font: normal 1.5rem arial;
     color: white;
 }
 
-ol{
+ol {
     list-style: none;
 }
 
-header.HeaderMenu{
+header.HeaderMenu {
     background-color: blueviolet;
     border: 3px solid rgb(102, 28, 172);
     border-radius: 2px;
@@ -29,7 +29,7 @@ header.HeaderMenu{
     height: auto;
 }
 
-ol.menu{
+ol.menu {
     display: flex;
     gap: 15px;
     padding: 25px;
@@ -39,37 +39,70 @@ ol.menu{
     align-items: center;
 }
 
-ol.menu li{
+ol.menu li {
     padding: 0px;
-    border-radius: 15px;    
+    border-radius: 15px;
 }
 
-ol.menu li a{
+ol.menu li a {
     background-color: rgb(102, 28, 172);
     padding: 7px;
     border-radius: 7px;
 }
 
-ol.menu li a:hover{
+ol.menu li a:hover {
     background-color: rgb(33, 13, 88);
     border: rgba(255, 115, 0, 0.966);
 }
 
-ol li.TitleList{
-    font: bolder 1.4rem  arial;
+/*Aqui se encontra  o design do contéudo principal da página*/
+ol.Content{
+    text-align: justify;
+    margin: 10px;
+}
+
+ol.Content li{
+    margin: 25px;
+}
+
+ol.Content li.TitleList {
+    font: bolder 1.4rem arial;
     color: bisque;
 
 }
-section.intro{
+
+ol.Content li.SubT {
+    font: normal 1.1rem arial;
+    color: bisque;
+    margin-top: 2px;
+}
+
+section.intro {
     margin: 5px;
-    border:5px;
+    border: 5px;
     justify-content: center;
 }
-div.CenterContent{
+
+div.CenterContent {
     justify-content: center;
-    margin:13px;
+    margin: 13px;
     border: 12px;
     padding-right: 25%;
     padding-left: 25%;
 }
 
+p{
+    text-align: justify;
+    font: normal 1.4rem arial;
+    color:white;
+}
+
+/*Botão de acesso do exercício*/
+a.bntExIniti{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    background-color:rgb(95, 13, 172);
+    border: 3px solid darkorange;
+    border-radius: 25px;
+}
