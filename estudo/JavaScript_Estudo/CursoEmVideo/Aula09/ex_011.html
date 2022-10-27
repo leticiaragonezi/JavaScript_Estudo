@@ -2,11 +2,12 @@
 <html lang="pt-br">
 
 <head>
+    <!--Conceitos Iniciais DOM-->
+    <!--Maior parte da codificação ocorrerá dentro do html, após asimilação utilizar arquivos externos de .JS-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Página para estudar e praticar css JS html, foco DOM">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
+    <title>DOM First Class</title>
     <link rel="stylesheet" href="design03.css">
     <script src="Interactivity.js"></script>
 </head>
@@ -16,38 +17,81 @@
     <header class="HeaderMenu">
         <ol class="menu">
             <li><a href="index_Aula09.html" class="btnH">Home</a></li>
-            <li><a href="ex_012.html" class="btnH">Primeira Aula DOM</a></li>
-            <li><a href="Aula10_ex013.html" class="btnH">Segunda Aula DOM</a></li>
-            <li><a href="ex_014.html" class="btnH">Exercício</a></li>
+            <li><a href="ex_011.html" class="btnH">Primeira Aula DOM</a></li>
+            <li><a href="Aula10_ex012.html" class="btnH">Segunda Aula DOM</a></li>
+            <li><a href="ex_013.html" class="btnH">Exercício</a></li>
+
+
             <script src=""></script>
         </ol>
     </header>
 
     <!--sessão de contéudos base da aula-->
     <section id="Intro" class="intro">
-
+        <!--Contextualizando o que é DOM-->
         <div class="CenterContent">
-            <ol>
-                <li class="TitleList">Estrtura DOM :</li><br>
+            <ol class="Content">
+                <li class="TitleList">Estrutura DOM :</li>
                 <li>DOM significa (Document Object Model).</li>
                 <li>
-                    <br>
-                    <ol>
-                        <li id="Explication">Podemos definir DOM como uma estrutura que ocorre dentro de uma página na Web assim nomeando
-                            e estruturando as partes e transformando elas em objetos, e podendo assim definir de uma
-                            maneira que JavaScript poderá utilizar para causar interatividade, ou mudar os objetos assim podendo definir</li>
-                    </ol>
+                <li id="Explication">Podemos definir DOM como uma estrutura que ocorre dentro de uma página na
+                    Web assim nomeando
+                    e estruturando as partes e transformando elas em objetos, e podendo assim definir de uma
+                    maneira que JavaScript poderá utilizar para causar interatividade, ou mudar os objetos assim
+                    podendo definir
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                </li>
             </ol>
         </div>
     </section>
 
-    <button type="button" onclick=" Process()">Complete</button>
+    <section id="TypesOf">
+
+        <div class="CenterContent">
+            <p>
+                Primeiramente podemos aprender como funciona o <strong>console.dir(document.qualquer objeto
+                    especifico)</strong> uma observação que deve ser feita é que a questão do console.dir é que se
+                somente escrevermos document ele assessará a todas as funcionalidades e objetos presentes dentro do
+                documento, porém se adicionarmos mas alguma coisa após ao ponto inserido no final da palavra documento
+                poderemos ter acesso específico a um objeto de dentro do Pattern(objeto elementar pai na ramificação no
+                nosso caso DOCUMENT) <strong>document</strong>.
+            </p><br>
+        </div>
+
+        <div class="CenterContent">
+            <p>
+                Devemos definir também como podemos chamar os elemnetos de uma página que estarão dentro do
+                documento, para então podermos manipulalos da maneira mais satisfatória possível. Assim podemos utilizar
+                de artificios dentro do JavaScript tais quais:
+            </p><br />
+            <ol class="Content">
+                <li>Por metodologia de tag com o comando <strong>getElementsByTagName(`nome da tag`) </strong></li>
+                <li>Por metodologia de id com o comando <strong>getElementById(`ID do elemento`)</strong></li>
+                <li>Por metodologia de classe com o comando <strong>getElementByClass(`nome da classe`)</strong></li>
+                <li>Feito por metodologia de query, este é o Seletor mais recomendavel:</li>
+
+                <li>
+                    <strong>querySlector</strong>("${aqui vai a tag name}${aqui vai o simbolo estilo css}${aqui vai o id
+                    ou a classe}")
+                </li>
+
+                <li>A metodologia querySlector tem mais uma opção a <strong>querySlectorAll(``)</strong>, na qual o
+                    seletor vai pegar todos os objetos/elementos dentro do documento que tenham o nome da tag, e se
+                    definido com uma classeeste seletor todas as tags com determinada class(classe) ou ID(indereço).
+                </li>
+
+                <li class="SubT">Podemos dar um exemplo prático:</li>
+                <li>document.querySelectorAll("div.CenterContent").</li>
+                <li>Este comando nos retornara até o momento do site a resposta:</li>
+                <li class="SubT">NodeList(3)[div.CenterContent,div.CenterContent,div.CenterContent]</li>
+                <li>E além disso a possibilidade de acessar tudo que está dentro destes três objetos, suas
+                    funcionalidades, seus objetos filhos, seus objetos pais e muito mais, possibilitando assim trabalhar
+                    de uma maneira mais eficiente com a programação em JavaScript principalmente voltada para o
+                    front-end.
+                </li>
+            </ol>
+        </div>
+    </section>
 </body>
 
 </html>
