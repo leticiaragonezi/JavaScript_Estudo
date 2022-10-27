@@ -1,3 +1,4 @@
+/* 1° bloco zerando e reformulando conceitos base de algumas tags*/
 * {
     padding: 0px;
     margin: 0px;
@@ -19,7 +20,8 @@ ol {
     list-style: none;
 }
 
-header.HeaderMenu {
+/*2° bloco criação do menu de cabeçalho*/
+header.HeaderMenu{
     background-color: blueviolet;
     border: 3px solid rgb(102, 28, 172);
     border-radius: 2px;
@@ -29,7 +31,8 @@ header.HeaderMenu {
     height: auto;
 }
 
-ol.menu {
+/*definição para menu responsivo*/
+ol.menu{
     display: flex;
     gap: 15px;
     padding: 25px;
@@ -50,10 +53,11 @@ ol.menu li a {
     border-radius: 7px;
 }
 
-ol.menu li a:hover {
+ol.menu li a:hover{
     background-color: rgb(33, 13, 88);
     border: rgba(255, 115, 0, 0.966);
 }
+
 
 /*Aqui se encontra  o design do contéudo principal da página*/
 ol.Content{
@@ -68,34 +72,39 @@ ol.Content li{
 ol.Content li.TitleList {
     font: bolder 1.4rem arial;
     color: bisque;
-
-}
-
-ol.Content li.SubT {
+    
+ ol.Content li.SubT {
     font: normal 1.1rem arial;
     color: bisque;
     margin-top: 2px;
 }
 
-section.intro {
+
+
+/*definição de conteúdos estrutura de conhecimento inicial */
+
+section.intro{
     margin: 5px;
     border: 5px;
     justify-content: center;
 }
 
-div.CenterContent {
+div.CenterContent{
     justify-content: center;
-    margin: 13px;
+    margin:13px;
     border: 12px;
     padding-right: 25%;
     padding-left: 25%;
 }
+
 
 p{
     text-align: justify;
     font: normal 1.4rem arial;
     color:white;
 }
+
+
 
 /*Botão de acesso do exercício*/
 a.bntExIniti{
@@ -106,3 +115,4 @@ a.bntExIniti{
     border: 3px solid darkorange;
     border-radius: 25px;
 }
+
