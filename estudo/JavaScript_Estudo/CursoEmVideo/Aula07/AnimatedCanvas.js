@@ -1,9 +1,7 @@
-
-var x = window.prompt(`Olá digite seu Nome:`)
-var age = window.prompt(`Por favor digite também sua idade:`)
-var Congrat = ` esperamos que esteja gostando!!`
-
 function interactive() {
+    var x = window.prompt(`Olá digite seu Nome:`)
+    var age = window.prompt(`Por favor digite também sua idade:`)
+    var Congrat = ` esperamos que esteja gostando!!`
     var Maturi = age<=17 ? `Menor`: `Maior`
     document.getElementById(`titleLanding`).innerHTML =`Olá  ${x}  ${Congrat} <br> Identificamos que vc é ${Maturi} de idade!<br>Este site ainda está em processo de aprimoramento, pedimos perdão pelo transtorno.`
     if(Maturi==`Menor`){
